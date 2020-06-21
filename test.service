@@ -1,0 +1,22 @@
+# this is /usr/lib/systemd/system/your_cmd.service
+# (or /lib/systemd/system/your_cmd.service dependent on 
+#  your linux distribution flavor )
+[Unit]
+Description=your_cmd server daemon
+Documentation=http://tuxgraphics.org/npa/
+After=network.target syslog.target
+
+[Service]
+# see man systemd.service 
+Type=oneshot
+User=pradeep
+Group=pradeep
+ExecStart=/bin/bash /usr/scripts/reboot.sh start
+RemainAfterExit=true
+ExecStop=/bin/bash /usr/scripts/reboot.sh stop
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target 
+
+
