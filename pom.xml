@@ -15,6 +15,18 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    <distributionManagement>
+    <repository>
+      <id>Release</id>
+      <name>Pradeep-Release</name>
+      <url>http://34.68.18.246:8081/repository/Pradeep-Release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>Snapshot</id>
+      <name>Pradeep-Snapshot</name>
+      <url>http://34.68.18.246:8081/repository/Pradeep-Snapshot/</url>
+    </snapshotRepository>
+</distributionManagement>
     <build>
         <plugins>
             <plugin>
