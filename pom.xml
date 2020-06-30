@@ -45,6 +45,6 @@
                 </configuration>
             </plugin>
         </plugins>
-        <finalName>SampleWebApp</finalName>
+        <finalName>hello</finalName>
    </build>
 </project>
